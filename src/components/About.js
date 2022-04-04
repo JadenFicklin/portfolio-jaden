@@ -52,8 +52,8 @@ function About() {
           <p>Node.js</p>
           <p>SQL</p>
           <p>Javascript</p>
-          <p>HTML</p>
-          <p>CSS</p>
+          <p>HTML 5</p>
+          <p>CSS 3</p>
           <h2>Developer Tools</h2>
           <p>Git</p>
           <p>Github</p>
