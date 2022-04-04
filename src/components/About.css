@@ -1,9 +1,17 @@
+.skills-info-box {
+  position: absolute;
+  top: 150px;
+  right: 0%;
+  width: 50%;
+  height: 650px;
+}
+
 .skills-header {
   position: absolute;
-  top: 70px;
-  right: 45.5%;
+  top: 45px;
+  left: 5%;
   color: white;
-  font-size: 50px;
+  font-size: 73px;
 }
 
 .skills-box {
@@ -17,7 +25,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-left: 3px solid white;
+  border-left: 3px solid #9c9c9c;
 }
 
 .skills {
@@ -26,10 +34,11 @@
   position: absolute;
   right: 10%;
   top: 140px;
+  z-index: 3;
 }
 
 h2 {
-  color: #ffffff;
+  color: #9c9c9c;
 }
 p {
   cursor: pointer;
@@ -45,8 +54,30 @@ p:hover {
   height: 100px;
   margin: 20px;
   transition: 0.3s;
-  fill: white;
+  fill: #9c9c9c;
+  z-index: 3;
 }
 .icon:hover {
-  fill: black;
+  fill: white;
+}
+
+.about-info-box {
+  width: 43%;
+  height: 700px;
+  position: absolute;
+  left: 5%;
+  top: 200px;
+}
+.about-header {
+  font-size: 73px;
+  color: white;
+  margin-left: 40px;
+}
+.about-me-text {
+  margin: 40px;
+  font-size: 25px;
+  color: #9c9c9c;
+}
+.relocation-text {
+  font-size: 18px;
 }
