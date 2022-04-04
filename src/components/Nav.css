@@ -1,0 +1,81 @@
+.nav-outer {
+  background-color: #181818;
+  width: 70px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.top {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  font-weight: 700;
+  font-size: 45px;
+  color: #4d4d4e;
+  transition: 0.3s;
+}
+.top:hover {
+  color: white;
+}
+.mid {
+  position: absolute;
+  top: 38%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home,
+.about,
+.work {
+  width: 50px;
+  height: 50px;
+  background-color: #181818;
+  border: none;
+}
+.home2,
+.about2,
+.work2 {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.home2:hover,
+.about2:hover,
+.work2:hover {
+  fill: white;
+}
+
+.low {
+  width: 35px;
+  height: 150px;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.github,
+.linkdin {
+  width: 50px;
+  height: 50px;
+  background-color: #181818;
+  border: none;
+}
+
+.github2,
+.linkdin2 {
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.github2:hover,
+.linkdin2:hover {
+  fill: white;
+}

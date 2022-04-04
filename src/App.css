@@ -1,173 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Londrina+Solid&family=Nunito+Sans:wght@400;900&family=Oswald&family=Roboto:ital@0;1&family=Source+Sans+Pro:wght@200&display=swap");
 * {
-  font-family: "Nunito Sans", sans-serif;
-  background-color: #eef;
-  /* background-color: #ddddff; */
-  color: #224;
+  font-family: sans-serif;
 }
 
 body {
   margin: 0;
+  background-color: #022c43;
 }
 
-nav {
-  position: fixed;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 800;
+.home-header {
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 26%;
+  font-size: 64px;
+  width: 522px;
+  height: 240px;
+  font-weight: 700;
+  letter-spacing: 3px;
 }
-.about,
-.work {
+.home-sub-header {
+  color: #b0b0b0;
+  font-size: 21px;
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.home-contact-me {
+  cursor: pointer;
+  position: absolute;
+  top: 63%;
+  left: 10%;
+  border: 2px solid #faff00;
+  background-color: #022c43;
+  color: #faff00;
+  font-weight: 100;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 10px 30px;
   text-decoration: none;
-  margin: 20px;
-  font-size: 20px;
-  color: rgba(34, 34, 68, 0.596);
-  transition: 0.3s;
 }
-.about:hover,
-.work:hover {
-  color: rgb(34, 34, 68);
+.home-contact-me:hover {
+  cursor: pointer;
+  position: absolute;
+  top: 63%;
+  left: 10%;
+  background-color: #faff00;
+  color: #022c43;
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 20px;
+  padding: 10px 30px;
 }
 
-.outer {
-  padding-top: 100px;
+.code-animation-container {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  width: 680px;
+  height: 500px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
-.top-text {
-  position: fixed;
-  left: 1%;
-  top: 150px;
-  font-size: 96px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-weight: 800;
-  background-color: rgba(255, 255, 255, 0);
+#logo1 {
+  animation: fill 1.5s ease forwards 2.5s;
 }
-.lower-text {
-  position: fixed;
-  top: 280px;
-  font-size: 32px;
+#logo1 path:nth-child(1) {
+  stroke-dasharray: 1010;
+  stroke-dashoffset: 1010;
+  animation: line-anim 2s ease forwards;
 }
-.mountain-one,
-.mountain-two,
-.mountain-three,
-.mountain-four,
-.mountain-five {
-  clip-path: polygon(50% 23%, 0% 100%, 100% 100%);
-  width: 1000px;
-  height: 900px;
-  background-color: rgb(195, 195, 255);
-  position: fixed;
-  z-index: 3;
-  left: -27%;
-  bottom: 0px;
+#logo2 {
+  animation: fill 1.5s ease forwards 2.5s;
 }
-.mountain-two {
-  height: 800px;
-  left: -15%;
+#logo2 path:nth-child(1) {
+  stroke-dasharray: 1210;
+  stroke-dashoffset: 1210;
+  animation: line-anim 2s ease forwards 0.3s;
 }
-.mountain-three {
-  z-index: 2;
-  height: 700px;
-  left: -3%;
-  background-color: rgb(215, 215, 255);
+#logo3 {
+  animation: fill 1.5s ease forwards 2.5s;
 }
-.mountain-four {
-  z-index: 1;
-  height: 660px;
-  left: 8%;
-  background-color: rgb(228, 228, 255);
-}
-.mountain-five {
-  z-index: 1;
-  height: 600px;
-  width: 860px;
-  left: 42%;
-  background-color: rgb(228, 228, 255);
-}
-.mountain-six,
-.mountain-seven,
-.mountain-eight {
-  clip-path: polygon(50% 23%, 0% 100%, 100% 100%);
-  width: 1000px;
-  height: 900px;
-  background-color: rgb(195, 195, 255);
-  position: fixed;
-  z-index: 3;
-  right: -500px;
-  bottom: 0px;
-}
-.mountain-six {
-  clip-path: polygon(91% 29%, 100% 43%, 100% 100%, 43% 100%);
-  width: 1100px;
-  right: 0px;
-  z-index: 4;
-}
-.mountain-seven {
-  clip-path: polygon(91% 29%, 100% 43%, 100% 100%, 43% 100%);
-  background-color: rgb(215, 215, 255);
-  height: 800px;
-  width: 1050px;
-  right: 13%;
-  z-index: 2;
-}
-.mountain-eight {
-  clip-path: polygon(50% 23%, 0% 100%, 100% 100%);
-  background-color: rgb(228, 228, 255);
-  height: 650px;
-  width: 950px;
-  right: 5%;
-  z-index: 1;
-}
-.profile-picture {
-  position: fixed;
-  top: 350px;
-  width: 300px;
-  height: 300px;
-  background-image: url("./pictures/Jaden.jpg");
-  background-image: url("./pictures/jaden2.jpg");
-  background-image: url("./pictures/jaden3.jpg");
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: none;
-  z-index: 4;
-  border-radius: 50%;
-}
-.overlay {
-  width: 100%;
-  height: 210px;
-  margin-top: 300px;
-  background: rgb(195, 195, 255);
-  background: linear-gradient(
-    0deg,
-    rgb(195, 195, 255),
-    rgba(255, 255, 255, 0) 100%
-  );
-  position: fixed;
-  bottom: 0px;
-  z-index: 5;
-}
-.about-me {
-  position: fixed;
-  bottom: 20px;
-  z-index: 5;
-  background-color: rgba(255, 255, 255, 0);
-  font-weight: 800;
-  font-size: 20px;
-  color: rgba(34, 34, 68, 0.616);
+#logo3 path:nth-child(1) {
+  stroke-dasharray: 1010;
+  stroke-dashoffset: 1010;
+  animation: line-anim 2s ease forwards 0.9s;
 }
 
-.contact-outer {
-  margin-top: 1000px;
-  width: 100%;
-  height: 1010px;
-  z-index: 6;
-  background-color: white;
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
 }

@@ -1,0 +1,52 @@
+.skills-header {
+  position: absolute;
+  top: 70px;
+  right: 45.5%;
+  color: white;
+  font-size: 50px;
+}
+
+.skills-box {
+  width: 500px;
+  height: 480px;
+  position: absolute;
+  right: 350px;
+  top: 6px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-left: 3px solid white;
+}
+
+.skills {
+  width: 300px;
+  height: 540px;
+  position: absolute;
+  right: 10%;
+  top: 140px;
+}
+
+h2 {
+  color: #ffffff;
+}
+p {
+  cursor: pointer;
+  color: #9c9c9c;
+}
+p:hover {
+  color: white;
+}
+
+.icon {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  transition: 0.3s;
+  fill: white;
+}
+.icon:hover {
+  fill: black;
+}
