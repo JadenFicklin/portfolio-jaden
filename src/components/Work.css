@@ -72,13 +72,21 @@
   background-image: url("../pictures/sopi.JPG");
 }
 .proj-3-image {
-  background-image: url("../pictures/audo.JPG");
+  background-image: url("../pictures/ambience2.JPG");
 }
-.a-tag {
+.a-tag,
+.a-tag-2,
+.a-tag-3 {
   cursor: pointer;
   text-decoration: none;
   color: white;
   position: absolute;
   left: 10%;
   top: 80%;
+}
+.a-tag-2 {
+  left: 38%;
+}
+.a-tag-3 {
+  left: 66%;
 }
